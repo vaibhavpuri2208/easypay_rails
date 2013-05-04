@@ -21,10 +21,33 @@
   <body>
 
     <%= flash[:notice] %>
-    <%if session[:user_id].present? %>
-      <%= link_to "Sign out", signout_url() %>
-    <% end %>
     <%= yield %>
+    
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="span7">
+            <h3 class="footer-title">Subscribe</h3>
+            <p>Want to get more stuff like this?<br/>
+              Subscribe to Taggito news and updates to stay tuned on great NFC Solutions.<br/>
+              Go to: <a href="http://taggito.com" target="_blank">taggito.com/blog</a>
+            </p>
+          </div> <!-- /span8 -->
+
+          <div class="span5">
+            <div class="footer-banner">
+              <h3 class="footer-title">Get Events Promo</h3>
+              <ul>
+                <li>Nirvana in Heaven</li>
+                <li>Pearl Jam in Brazil</li>
+                <li>Bla Bla Bla</li>
+              </ul>
+              Go to: <a href="http://taggito.com/promo" target="_blank">taggito.com/promo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
   </body>
   <!-- Loading JS -->
