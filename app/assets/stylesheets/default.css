@@ -2,11 +2,14 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @font-face {
 	font-family: 'bpicons';
-	src:url('../fonts/bpicons/bpicons.eot');
-	src:url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/bpicons/bpicons.woff') format('woff'),
-		url('../fonts/bpicons/bpicons.ttf') format('truetype'),
-		url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
+	
+	src: url('<%= asset_path('bpicons.eot') %>');
+	
+	src:
+	  url('<%= asset_path('bpicons.eot?#iefix') %>') format('embedded-opentype'),
+		url('<%= asset_path('bpicons.woff') %>') format('woff'),
+		url('<%= asset_path('bpicons.ttf') %>') format('truetype'),
+		url('<%= asset_path('bpicons.svg#bpicons') %>') format('svg');
 	font-weight: normal;
 	font-style: normal;
 } /* Made with http://icomoon.io/ */
@@ -20,7 +23,7 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 
 body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
-    color: #47a3da;
+    color: #BDC3C7;
     background: #2C3E50;
 }
 
@@ -170,25 +173,4 @@ width: 90%;
 }
 .bp-icon-prev:after {
 	content: "\e004";
-}
-
-@media screen and (max-width: 55em) {
-
-	.container > header h1,
-	.container > header nav {
-		float: none;
-	}
-
-	.container > header > span,
-	.container > header h1 {
-		text-align: center;
-	}
-
-	.container > header nav {
-		margin: 0 auto;
-	}
-
-	.container > header > span {
-		text-indent: 30px;
-	}
 }
