@@ -1,8 +1,23 @@
-<h1>Sign In!</h1>
+<div class="login">
+  <div class="login-screen">
+    <div class="login-icon">
+      <%= image_tag "logo1.png" %>
+    </div>
+    
+    <div class="login-form">
+      <%= form_tag '/sessions', :method=>:post do %>
+        <div class="control-group">
+          <%= text_field_tag :name, nil, class: "login-field", placeholder: "Enter your name", id: "login-name" %>
+          <label class="login-field-icon fui-man-16" for="login-name"></label>
+        </div>
+        <div class="control-group">
+          <%= password_field_tag :password, nil, class: "login-field", placeholder: "Password", id: "login-pass" %>
+          <label class="login-field-icon fui-lock-16" for="login-pass"></label>
+        </div>
+        <%= submit_tag "Let Me In!", class: "btn btn-primary btn-large btn-block" %>
+      <% end %>
+      <a class="login-link" href="#">Lost your password?</a>
+    </div>
 
-
-<%= form_tag '/sessions', :method=>:post do %>
-  <div class="field"><%= label_tag :name %><br/><%= text_field_tag :name, nil, size: 50 %></div>
-  <div class="field"><%= label_tag :password %><br/><%= password_field_tag :password, nil, size: 20 %></div>
-  <%= submit_tag "Let Me In!" %>
-<% end %>
+  </div>
+</div>  
