@@ -1,0 +1,8 @@
+<h1>Sign In!</h1>
+
+
+<%= form_tag '/sessions', :method=>:post do %>
+  <div class="field"><%= label_tag :name %><br/><%= text_field_tag :name, nil, size: 50 %></div>
+  <div class="field"><%= label_tag :password %><br/><%= password_field_tag :password, nil, size: 20 %></div>
+  <%= submit_tag "Let Me In!" %>
+<% end %>
