@@ -29,8 +29,11 @@
   		</ul>
   	</div>
   	<div class="span3">
-    	<p>Welcome <%= @transactions.first.vendor.name %>!</p>
-    	<%= @transactions.sum(:amount) %>
+    	<p class="demo-download-text">Welcome <%= @transactions.first.vendor.name %>!</p>
+    	<div class="demo-download">
+    	  <p>Total Revenue</p>
+      	<h1>€<%= @transactions.sum(:amount) %>.00</h1>
+    	</div>
   	</div>
 	</div>
 </div>

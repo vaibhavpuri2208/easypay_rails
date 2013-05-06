@@ -122,10 +122,19 @@
 	.cbp_tmtimeline > li .cbp_tmtime span:last-child {
 		font-size: 1.5em;
 	}
+	.demo-download {
+  background-color: #ECF0F1;
+  border-radius: 50%;
+  /* height: 120px; */
+  margin: 0 auto 32px;
+  padding: 70px 28px 70px 32px;
+  text-align: center;
+  color: #1ABC9C;
+  /* width: 130px; */ }
 }
 
 @media screen and (max-width: 47.2em) {
-	.cbp_tmtimeline:before {
+	.cbp_tmtimeline:before, .cbp_tmtimeline > li .cbp_tmicon {
 		display: none;
 	}
 
@@ -150,13 +159,13 @@
 		right: auto;
 		left: 20px;
 		border-right-color: transparent;
-		border-bottom-color: #3594cb;
+		border-bottom-color: #1abc9c;
 		top: -20px;
 	}
 
 	.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
 		border-right-color: transparent;
-		border-bottom-color: #6cbfee;
+		border-bottom-color: #16A085;
 	}
 
 	.cbp_tmtimeline > li .cbp_tmicon {
